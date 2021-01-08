@@ -1,0 +1,30 @@
+
+/**
+ * @author      Alouan Smart 
+ * @version     1.6                 (current version number of program)
+ * @since       1.2          (the version of the package this class was first added to)
+ */
+import javax.swing.*;
+
+public class My_Tools extends JPanel {
+          
+    /**
+ * CalcPanelSolarKWatt is given from parameters VOLT AMPERE                (1)
+ * <p>
+ * The power is the moltiplication from Ampere to Volt all
+ * divided by 1000
+ * <p>
+ * @param  dAmpere Ampere
+ * @param  dVolt   Volt
+ * @return kWatt 
+ */
+    
+    public double CalcPanelSolarKWatt(double dAmpere, double dVolt)
+    {
+        double r=0;
+        r=(dAmpere*dVolt)/1000;
+        return r;
+    }
+    
+    
+}
